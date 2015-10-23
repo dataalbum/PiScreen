@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="PiScreen.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PiScreen"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TimePicker x:Name="timePicker" TimeChanged="timePicker_TimeChanged" ClockIdentifier="24HourClock" HorizontalAlignment="Left" Margin="60,276,0,0" VerticalAlignment="Top" Header="Set Alarm"/>
+        <TextBox x:Name="textBoxAlarm" Header="Alarm Time" HorizontalAlignment="Left" Margin="60,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="57" Width="100"/>
+        <ToggleSwitch x:Name="toggleSwitch" Header="Alarm Switch" HorizontalAlignment="Left" Margin="60,341,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockAlarm" HorizontalAlignment="Left" Margin="60,406,0,0" TextWrapping="Wrap" Text="No Alarm" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockTime" FontSize="40" HorizontalAlignment="Left" Margin="60,85,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockDate" HorizontalAlignment="Left" Margin="60,146,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockSecond" HorizontalAlignment="Left" Margin="162,112,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="105" Margin="30,85,0,0" Stroke="Black" VerticalAlignment="Top" Width="302"/>
+        <Rectangle HorizontalAlignment="Left" Height="239" Margin="30,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="302"/>
+    </Grid>
+</Page>
