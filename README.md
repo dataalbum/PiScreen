@@ -1,5 +1,5 @@
 # PiScreen
 Windows 10 IoT Core Universal Windows Application (XAML, C#)
 
-# Features
+## Features
 Clock with Alarm.
